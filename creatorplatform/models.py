@@ -106,7 +106,7 @@ class Category(models.Model):
 class Product(models.Model):
 
     title = models.CharField(max_length=255, verbose_name="Product name")
-    stores = models.ManyToManyField(Store, verbose_name='Stores')
+    stores = models.ForeignKey(Store, verbose_name='Stores',on_delete=models.CASCADE, default="1")
     category = models.ForeignKey(Category, verbose_name='Category', on_delete=models.PROTECT, null=True)
     description = models.TextField(verbose_name='Description', null=True)
     price = models.DecimalField(max_digits=12, decimal_places=2, verbose_name="Price", default=0)
