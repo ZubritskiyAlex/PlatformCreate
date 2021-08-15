@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PlatformCreator" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/creatorplatformui" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/creatorui" vcs="Git" />
   </component>
